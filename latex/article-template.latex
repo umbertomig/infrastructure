@@ -60,6 +60,7 @@ $endif$
 
 % Adapted from tcolorbox manual and Samy Beladram at https://www.overleaf.com/latex/examples/simple-stylish-box-design/stzmmcshxdng
 \newtcolorbox[auto counter]{algbox}[2][] {
+    oversize,
     before skip=\baselineskip,
     after skip=\baselineskip,
     toptitle=5pt,
@@ -68,7 +69,6 @@ $endif$
     colback=white,
     coltitle=black,
     title={Box ~\thetcbcounter: #2},
-    width=0.8\linewidth,
     center,
     fonttitle=\bfseries,
     enhanced,
