@@ -83,7 +83,7 @@ $endif$
 
 % Define the custom environment
 \newenvironment{stepenum}
-  {\begin{enumerate}[label=Step~\arabic*:, leftmargin=*]}
+  {\begin{enumerate}[label=\textbf{Step~\arabic*}:, leftmargin=*]}
   {\end{enumerate}}
 
 % Spacing
