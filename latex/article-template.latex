@@ -79,6 +79,12 @@ $endif$
     #1
 }
 
+\usepackage{enumitem}
+
+% Define the custom environment
+\newenvironment{stepenum}
+  {\begin{enumerate}[label=Step~\arabic*:, leftmargin=*]}
+  {\end{enumerate}}
 
 % Spacing
 \usepackage{setspace}
