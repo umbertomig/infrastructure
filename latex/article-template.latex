@@ -56,11 +56,12 @@ $endif$
 \definecolor{darkblue}{rgb}{0.0,0.0,0.55}
 
 % Boxing algorithms
-\usepackage[xparse,skins,breakable]{tcolorbox}
+\usepackage[all]{tcolorbox}
 
 % Adapted from tcolorbox manual and Samy Beladram at https://www.overleaf.com/latex/examples/simple-stylish-box-design/stzmmcshxdng
 \newtcolorbox[auto counter]{algbox}[2][] {
     oversize,
+	breakable,
     before skip=\baselineskip,
     after skip=\baselineskip,
     toptitle=5pt,
