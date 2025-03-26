@@ -51,9 +51,34 @@ $endif$
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
 
-% Colours
+% Colors
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.55}
+
+% Boxing algorithms
+\usepackage[xparse,skins,breakable]{tcolorbox}
+
+% Adapted from tcolorbox manual and Samy Beladram at https://www.overleaf.com/latex/examples/simple-stylish-box-design/stzmmcshxdng
+\newtcolorbox[auto counter]{algbox}[2][] {
+    before skip=\baselineskip,
+    after skip=\baselineskip,
+    toptitle=5pt,
+    bottomtitle=5pt,
+    colbacktitle=black!10!white,
+    colback=white,
+    coltitle=black,
+    title={Box ~\thetcbcounter: #2},
+    width=0.8\linewidth,
+    center,
+    fonttitle=\bfseries,
+    enhanced,
+    boxrule = 0pt,
+    boxsep=5pt,
+    fuzzy shadow = {0pt}{-2pt}{-0.5pt}{0.5pt}{black!35},
+    sharpish corners, % better drop shadow
+    #1
+}
+
 
 % Spacing
 \usepackage{setspace}
